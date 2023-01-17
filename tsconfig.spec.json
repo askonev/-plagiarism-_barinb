@@ -1,13 +1,17 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
+/* TODO To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/spec",
+    "outDir": "../../../dist/out-tsc",
+    "module": "commonjs",
     "types": [
-      "jasmine",
-      "@angular/localize"
+      "jest",
+      "node"
     ]
   },
+  "files": [
+    "src/test-setup.ts"
+  ],
   "include": [
     "src/**/*.spec.ts",
     "src/**/*.d.ts"
